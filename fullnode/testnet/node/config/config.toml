@@ -22,7 +22,7 @@ db_backend = "leveldb"
 db_dir = "data"
 
 # Output level for logging, including package level options
-log_level = "*:info"
+log_level = "main:info"
 
 ##### additional base config options #####
 
@@ -95,10 +95,10 @@ laddr = "tcp://0.0.0.0:26656"
 # If empty, will use the same port as the laddr,
 # and will introspect on the listener or use UPnP
 # to figure out the address.
-external_address = "{{EXIP}}"
+external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "98b7734d89a920ca83117734029be85d21dd0c0b@aca612c9909b011e988520ad55ba7f5a-2101912208.us-east-1.elb.amazonaws.com:26656"
+seeds = "98b7734d89a920ca83117734029be85d21dd0c0b@aca612c9909b011e988520ad55ba7f5a-2101912208.us-east-1.elb.amazonaws.com:26656,4f1d2b8337f3ecb8dc439562d5aaaa01e7c40917@a67036b9509a411e994280efee3352a7-868397427.ap-northeast-1.elb.amazonaws.com:26656,f9b1d9852f2d3d924baa0eff2bde1088645f8f77@a3b29c12d09b011e988520ad55ba7f5a-354720598.us-east-1.elb.amazonaws.com:26656,83c6540d09694c0fc8e8d57f8304ef1bad34de4f@a4311077d09b011e988520ad55ba7f5a-332544075.us-east-1.elb.amazonaws.com:26656,205fdae9b18cd0c999486140e249ee2c9caa4815@a4dc2e51309b011e988520ad55ba7f5a-1541317034.us-east-1.elb.amazonaws.com:26656,17660d44956f00bb1ea763e1fd853e58ba23f889@a2c2faa2209a411e98ced0ac108d49f7-1041172116.ap-northeast-1.elb.amazonaws.com:26656,17c48e0e0e30f797db852ced7e869befee297674@a4a6edeff09a411e994280efee3352a7-1786101214.ap-northeast-1.elb.amazonaws.com:26656,a58e7c9a0a03dc4e7845deb7dc5d631bfac77622@a50b0eca509a411e9a951063f6065739-901254989.ap-northeast-1.elb.amazonaws.com:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
