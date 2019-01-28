@@ -1,0 +1,61 @@
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+[base]
+# Size of account cache
+accountCacheSize = 30000
+# Size of signature cache
+signatureCacheSize = 30000
+
+[addr]
+# Bech32PrefixAccAddr defines the Bech32 prefix of an account's address
+bech32PrefixAccAddr = "bnc"
+# Bech32PrefixAccPub defines the Bech32 prefix of an account's public key
+bech32PrefixAccPub = "bncp"
+# Bech32PrefixValAddr defines the Bech32 prefix of a validator's operator address
+bech32PrefixValAddr = "bva"
+# Bech32PrefixValPub defines the Bech32 prefix of a validator's operator public key
+bech32PrefixValPub = "bvap"
+# Bech32PrefixConsAddr defines the Bech32 prefix of a consensus node address
+bech32PrefixConsAddr = "bca"
+# Bech32PrefixConsPub defines the Bech32 prefix of a consensus node public key
+bech32PrefixConsPub = "bcap"
+
+##### publication related configurations #####
+[publication]
+# configurations ends with Kafka can be a semi-colon separated host-port list
+# Whether we want publish market data (this includes trades and order)
+publishOrderUpdates = false
+orderUpdatesTopic = "orders"
+orderUpdatesKafka = "127.0.0.1:9092"
+
+# Whether we want publish account balance to notify browser db indexer persist latest account balance change
+publishAccountBalance = false
+accountBalanceTopic = "accounts"
+accountBalanceKafka = "127.0.0.1:9092"
+
+# Whether we want publish order book changes
+publishOrderBook = false
+orderBookTopic = "orders"
+orderBookKafka = "127.0.0.1:9092"
+
+# Whether we want publish block fee changes
+publishBlockFee = false
+blockFeeTopic = "accounts"
+blockFeeKafka = "127.0.0.1:9092"
+
+# Global setting
+publicationChannelSize = "10000"
+
+[log]
+
+# Write logs to console instead of file
+logToConsole = false
+
+## The below parameters take effect only when logToConsole is false
+# Log file root, if not set, use home path
+logFileRoot = ""
+# Log file path relative to log file root path
+logFilePath = "bnc.log"
+# Number of logs keep in memory before writing to file
+logBuffSize = 10000
