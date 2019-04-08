@@ -59,7 +59,7 @@ transferKafka = "172.18.3.60:9092"
 
 # Global setting
 publicationChannelSize = "10000"
-publishKafka = true
+publishKafka = false
 publishLocal = false
 # max size in megabytes of marketdata json file before rotate
 localMaxSize = 1024
