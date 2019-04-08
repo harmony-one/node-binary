@@ -5,15 +5,24 @@
 
 # TCP or UNIX socket address of the ABCI application,
 # or the name of an ABCI application compiled in with the Tendermint binary
-proxy_app = "tcp://127.0.0.1:27148"
+proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
-moniker = "fullnode"
+moniker = "seed"
 
 # If this node is many blocks behind the tip of the chain, FastSync
 # allows them to catchup quickly by downloading blocks in parallel
 # and verifying their commits
 fast_sync = true
+
+
+# As state sync is an experimental feature, this switch can totally disable it on core network nodes (validator, witness)
+state_sync_reactor = false
+
+# If this node is many days behind the tip of the chain, StateSync
+# allows them to catchup quickly by downloading app state (without historical blocks)
+# in parallel and start syncing block afterwards
+state_sync = false
 
 # Database backend: leveldb | memdb | cleveldb
 db_backend = "leveldb"
@@ -22,7 +31,7 @@ db_backend = "leveldb"
 db_dir = "data"
 
 # Output level for logging, including package level options
-log_level = "main:info,state:info,pub:info,consensus:info,*:error"
+log_level = "main:info,paramHub:info,dex:info,dexkeeper:info,state:info,token:info,pub:info,consensus:info,*:error"
 
 # Output format: 'plain' (colored text) or 'json'
 log_format = "plain"
@@ -64,7 +73,7 @@ with_app_stat = true
 [rpc]
 
 # TCP or UNIX socket address for the RPC server to listen on
-laddr = "tcp://0.0.0.0:27147"
+laddr = "tcp://0.0.0.0:26657"
 
 # A list of origins a cross-domain request can be executed from
 # Default value '[]' disables cors support
@@ -106,7 +115,7 @@ max_open_connections = 900
 [p2p]
 
 # Address to listen for incoming connections
-laddr = "tcp://0.0.0.0:27146"
+laddr = "tcp://0.0.0.0:26656"
 
 # Address to advertise to peers for them to dial
 # If empty, will use the same port as the laddr,
@@ -115,10 +124,11 @@ laddr = "tcp://0.0.0.0:27146"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "d375415f420d7a664e52ed98a30a433842be930b@a41086771245011e988520ad55ba7f5a-5f7331395e69b0f3.elb.us-east-1.amazonaws.com:27146,b4df8a0e6f1fa312fddb49b7da17f9ca211fcd25@aa13359cd244f11e988520ad55ba7f5a-c3963b80c9b991b7.elb.us-east-1.amazonaws.com:27146,5421554b73f08efeca527e573a74d9daa920374b@aa35ed7c1244f11e988520ad55ba7f5a-bbfb4fe79dee5d7e.elb.us-east-1.amazonaws.com:27146,0ec79e01253acedabc6f705787ac2b03f6709864@aa58a7e44244f11e988520ad55ba7f5a-45d504e63bacb8dd.elb.us-east-1.amazonaws.com:27146"
+seeds = "381934b9b3f862d1e81e699d8e1d38929f330cef@aa13359cd244f11e988520ad55ba7f5a-c3963b80c9b991b7.elb.us-east-1.amazonaws.com:27146,fe5eb5a945598476abe4826a8d31b9f8da7b1a54@aa35ed7c1244f11e988520ad55ba7f5a-bbfb4fe79dee5d7e.elb.us-east-1.amazonaws.com:27146,8825b32e3abec71d772abf009ba1956d452be1fa@aa58a7e44244f11e988520ad55ba7f5a-45d504e63bacb8dd.elb.us-east-1.amazonaws.com:27146"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = ""
+persistent_peers = "381934b9b3f862d1e81e699d8e1d38929f330cef@aa13359cd244f11e988520ad55ba7f5a-c3963b80c9b991b7.elb.us-east-1.amazonaws.com:27146,fe5eb5a945598476abe4826a8d31b9f8da7b1a54@aa35ed7c1244f11e988520ad55ba7f5a-bbfb4fe79dee5d7e.elb.us-east-1.amazonaws.com:27146,8825b32e3abec71d772abf009ba1956d452be1fa@aa58a7e44244f11e988520ad55ba7f5a-45d504e63bacb8dd.elb.us-east-1.amazonaws.com:27146"
+
 # UPNP port forwarding
 upnp = false
 
@@ -174,7 +184,7 @@ broadcast = true
 wal_dir = ""
 
 # size of the mempool
-size = 20000
+size = 2000
 
 # size of the cache (used to filter transactions we saw earlier)
 cache_size = 10000
@@ -223,7 +233,7 @@ indexer = "kv"
 # It's recommended to index only a subset of tags due to possible memory
 # bloat. This is, of course, depends on the indexer's DB and the volume of
 # transactions.
-index_tags = ""
+index_tags = "tx.height"
 
 # When set to true, tells indexer to index all tags (predefined tags:
 # "tx.hash", "tx.height" and all tags from DeliverTx responses).

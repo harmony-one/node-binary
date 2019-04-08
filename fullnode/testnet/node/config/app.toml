@@ -35,7 +35,7 @@ bech32PrefixConsPub = "bcap"
 # Whether we want publish market data (this includes trades and order)
 publishOrderUpdates = false
 orderUpdatesTopic = "orders"
-orderUpdatesKafka = "127.0.0.1:9092"
+orderUpdatesKafka = "172.18.3.60:9092"
 
 # Whether we want publish account balance to notify browser db indexer persist latest account balance change
 publishAccountBalance = false
@@ -55,11 +55,11 @@ blockFeeKafka = "127.0.0.1:9092"
 # Whether we want publish transfers
 publishTransfer = false
 transferTopic = "transfers"
-transferKafka = "127.0.0.1:9092"
+transferKafka = "172.18.3.60:9092"
 
 # Global setting
 publicationChannelSize = "10000"
-publishKafka = false
+publishKafka = true
 publishLocal = false
 # max size in megabytes of marketdata json file before rotate
 localMaxSize = 1024
@@ -78,3 +78,17 @@ logFileRoot = ""
 logFilePath = "bnc.log"
 # Number of logs keep in memory before writing to file
 logBuffSize = 10000
+
+[upgrade]
+# fixOrderSeqInPriceLevel height
+fixOrderSeqInPriceLevelHeight = 2855000
+# fixDropFilledOrderSeq height
+fixDropFilledOrderSeqHeight = 2855000
+# AddFeeTypeForStakeTx height
+addFeeTypeForStakeTx = 6940000
+fixSeparateValAddrHeight = 6955000
+fixLotSizeAndOverflowsHeight = 6940000
+# fixOrderTimestamp height
+fixOrderTimestampHeight = 6940000
+# fixOrderTimestamp height
+upgradeGovStrategy = 6940000

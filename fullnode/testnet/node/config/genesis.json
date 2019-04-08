@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-02-13T11:59:30.752259237Z",
+  "genesis_time": "2019-03-07T01:52:07.500913003Z",
   "chain_id": "Binance-Chain-Nile",
   "consensus_params": {
     "block_size": {
@@ -22,65 +22,65 @@
         "name": "Binance Chain Native Token",
         "symbol": "BNB",
         "total_supply": "20000000000000000",
-        "owner": "tbnb1yeash0k40kd3u3dnygx49r77ayh27vrqjytdr4",
+        "owner": "tbnb12hlquylu78cjylk5zshxpdj6hf3t0tahwjt3ex",
         "mintable": false
       }
     ],
     "accounts": [
       {
         "name": "Fuji",
-        "address": "tbnb1yeash0k40kd3u3dnygx49r77ayh27vrqjytdr4",
-        "valaddr": "FB4CE2FD0AF45AB4324C2E4AB05C56A62099D1EB"
+        "address": "tbnb12hlquylu78cjylk5zshxpdj6hf3t0tahwjt3ex",
+        "valaddr": "7B343E041CA130000A8BC00C35152BD7E7740037"
       },
       {
         "name": "Kita",
-        "address": "tbnb1cy5jmnruumkarhxn4v8k6m5wdu2xgufrwepfez",
-        "valaddr": "9ADBF02BF4AD60EC58F428E9EA7F2884BC009E49"
+        "address": "tbnb167yp9jkv6uaqnyq62gfkx82xmfny0cl9xe04zj",
+        "valaddr": "E0DD72609CC106210D1AA13936CB67B93A0AEE21"
       },
       {
         "name": "Everest",
-        "address": "tbnb1lln24zy6uys6sqff0lkjjjajfmdnz23s4lfjvr",
-        "valaddr": "E73451CA21A158E0F48EC673F3A001A57D4925D4"
+        "address": "tbnb1earfwcjre04hp7phqnkw8ts04tkumdn0cyzun0",
+        "valaddr": "FC3108DC3814888F4187452182BC1BAF83B71BC9"
       },
       {
         "name": "Seoraksan",
-        "address": "tbnb1zwx2slptug57vfauf2tynrtv42kwm2kutegmvu",
-        "valaddr": "6EBBD88FA80FA01D480A48315E6CB6EE13F74125"
+        "address": "tbnb1hexqyu3m8uuudqdnnpnsnlwe6xg0n3078lx68l",
+        "valaddr": "62633D9DB7ED78E951F79913FDC8231AA77EC12B"
       },
       {
         "name": "Elbrus",
-        "address": "tbnb1xq3ygpjgexls5cst9tgrhwuv6ujuvswstvmwd9",
-        "valaddr": "F9EC2B00600429B8F1B96806D95EEAE493E54035"
+        "address": "tbnb135mqtf9gef879nmjlpwz6u2fzqcw4qlzrqwgvw",
+        "valaddr": "B6F20C7FAA2B2F6F24518FA02B71CB5F4A09FBA3"
       },
       {
         "name": "Ararat",
-        "address": "tbnb1nl3xmwwd23sgj98ygcw2l7zhgyd9q9ykcqslae",
-        "valaddr": "24B12A265E8ACB3A39C1720F7D0BCCC60EBC7625"
+        "address": "tbnb1q82g2h9q0kfe7sysnj5w7nlak92csfjztymp39",
+        "valaddr": "06FD60078EB4C2356137DD50036597DB267CF616"
       },
       {
         "name": "Carrauntoohil",
-        "address": "tbnb13k50n9c4jx6c795snr4gl4n0aeuwy3fjlazksq",
-        "valaddr": "1B12112FC896997D0EAFBBCB64C2C6354BCDA23D"
+        "address": "tbnb183nch8pn3f698vurrqypq3s254slcane2t66aj",
+        "valaddr": "37EF19AF29679B368D2B9E9DE3F8769B35786676"
       },
       {
         "name": "Scafell",
-        "address": "tbnb1nj52tv3yz0j0cjs0x0wjh73kymx3u0qkhg48pt",
-        "valaddr": "7A29FD70733D3EA43F38377092F36007BD593E86"
+        "address": "tbnb1r6l0c0fxu458hlq6m7amkcltj8nufyl9mr2wm5",
+        "valaddr": "18E69CC672973992BB5F76D049A5B2C5DDF77436"
       },
       {
         "name": "Aconcagua",
-        "address": "tbnb10y7kfq2lmvzkv7xn7rj8c9tzfyght75f8ulp9m",
-        "valaddr": "1B806575DB0818CD7C2E3A8727EEE7CD06432956"
+        "address": "tbnb193t8pkhm2sxw5uy5ypesygda8rzsk25ge3e9y7",
+        "valaddr": "344C39BB8F4512D6CAB1F6AAFAC1811EF9D8AFDF"
       },
       {
         "name": "Zugspitze",
-        "address": "tbnb1agny0vzplzg6ah0nt6vqajx35dtjlmf4p0lyrd",
-        "valaddr": "5E05DC0A27E9FE77E3661E8E82C8CC7231E6AFF0"
+        "address": "tbnb108drn8exhv72tp40e6lq9z949nnjj54yzqrr2f",
+        "valaddr": "91844D296BD8E591448EFC65FD6AD51A888D58FA"
       },
       {
         "name": "Gahinga",
-        "address": "tbnb1ets07q7vfh03cx2m8l88rhu92h7rx6sjryzq27",
-        "valaddr": "418ED0315DC3DBDC57D382624915C2D6675EA898"
+        "address": "tbnb1vehecekrsks5sshcwvxyeyrd469j9wvcqm37yu",
+        "valaddr": "B3727172CE6473BC780298A2D66C12F1A14F5B2A"
       }
     ],
     "dex": {},
@@ -114,7 +114,7 @@
           "type": "params/FixedFeeParams",
           "value": {
             "msg_type": "dexList",
-            "fee": "1000000000000",
+            "fee": "80000000000",
             "fee_for": 2
           }
         },
@@ -138,7 +138,7 @@
           "type": "params/FixedFeeParams",
           "value": {
             "msg_type": "issueMsg",
-            "fee": "200000000000",
+            "fee": "40000000000",
             "fee_for": 2
           }
         },
@@ -272,11 +272,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1yeash0k40kd3u3dnygx49r77ayh27vrqjytdr4",
-                  "validator_address": "bva1yeash0k40kd3u3dnygx49r77ayh27vrqudreaq",
+                  "delegator_address": "tbnb12hlquylu78cjylk5zshxpdj6hf3t0tahwjt3ex",
+                  "validator_address": "bva12hlquylu78cjylk5zshxpdj6hf3t0tahqmr98n",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "IZ40w6PvynAp0/xqH+kA9qjKvKeUTAa5Yyui5hzrwGI="
+                    "value": "Sl1HU+t5+S6A7+It96yk9mak9Ev4HFNsSgnUucW2VLU="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -291,14 +291,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "Av0Dzmbx41GyL1CWIIVnnzAySn1IGh16s5jGgurhck+5"
+                "value": "A+gcCBsoefY1d9TnkIOPV8IX5+/i/BTrMvFU7vG9RXIk"
               },
-              "signature": "NHgubN9/5S0CAdBGopoIT9O4oPT1fQ00Zv2gvS0JnexHs32U9yDlYWgZNQrLIvY2alm7ekW/XDOq3l6xoIRkng==",
+              "signature": "oWWGy2kN9yQDVJ/aLE7N/Si/lTTsce3k8VRsdtzO6doSw2eFL9v8wB3GdTaOBvuJGJti73WPGaEN8fbUjao5hw==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "947014bbe29f400123db3c7918ce56d73cf7215a@172.18.10.204:26656",
+          "memo": "1bca643058c56f9c20ebaaad1739522ee7d11cd6@172.18.10.204:26656",
           "source": "0",
           "data": null
         }
@@ -322,11 +322,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1cy5jmnruumkarhxn4v8k6m5wdu2xgufrwepfez",
-                  "validator_address": "bva1cy5jmnruumkarhxn4v8k6m5wdu2xgufrqsfa8h",
+                  "delegator_address": "tbnb167yp9jkv6uaqnyq62gfkx82xmfny0cl9xe04zj",
+                  "validator_address": "bva167yp9jkv6uaqnyq62gfkx82xmfny0cl9gs8pu8",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "4BaOY0rhdDvDoSPym32wpmzK2gPILDmgkRWsp9PMXE0="
+                    "value": "BCJDOWiPAS5kneSOJBiACS6qj2qg9PFL/Pngx2kXwLY="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -341,14 +341,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "Aks2FmC2DX/UbkFHayzpbQYdlpzmwBxjr7bW2WrpiAK/"
+                "value": "Axu55ox7sJ1YsxZsdtUGU7Is5xCzEfs0rT5nQ1JnCkuh"
               },
-              "signature": "MvZ8NgXrMG5c9oaQBedctKERc44QibfSmwnEFspjqpdoI7n+1j2nyjXlK2UT5tOIdzKtuAmAGOsDwz+y+s9bcw==",
+              "signature": "Mnvxh3LIiclOLlIN1N1vrOA7igL6pdo5EwKT/JzwQbNAPLQA9CgArrMaH+GW+m+wjxEezCDC9tDqe3KB0NwI1w==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "d97d330cf4a46c689be5b0ff62d497e2a1494164@172.18.10.205:26656",
+          "memo": "7bbe02b44f45fb8f73981c13bb21b19b30e2658d@172.18.10.205:26656",
           "source": "0",
           "data": null
         }
@@ -372,11 +372,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1lln24zy6uys6sqff0lkjjjajfmdnz23s4lfjvr",
-                  "validator_address": "bva1lln24zy6uys6sqff0lkjjjajfmdnz23smkpxjk",
+                  "delegator_address": "tbnb1earfwcjre04hp7phqnkw8ts04tkumdn0cyzun0",
+                  "validator_address": "bva1earfwcjre04hp7phqnkw8ts04tkumdn0kd2gd6",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "KGvVNSU4yLsexpeQzNayn33EdFPHdU1ONl5zuRWsG1A="
+                    "value": "QDSzfO2ooL8Tsauu7nqPk4NUIJmlVNIZuT0M5p45cOg="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -391,14 +391,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "A2V6Ptb68vsiKVA8DJyQQ6RbfEpskv+QEkFFzARBuh8X"
+                "value": "A7H2pGbdLT9YJQwlqNd3dWfq6fGs5Xk8v7h3Ckp+AU2e"
               },
-              "signature": "gyjsar4QpLpfhRdG32GO3IU3pbM7KLJBFI1wYA8keelaFmf23fVfm/YFAEQQHrMDAbwPonpK/tAZ5Uhfri4s0A==",
+              "signature": "8tLKWXxMc6HmOTovnRGD3i8xhX572wn3Kj8Kkd6ND9I/dOveZxfrvsmE6bXFRcyBvIXxFTSEef4fwuVKjNgWUw==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "d1b664b9ca672b549484511b79f6ebbb342ef5a4@172.18.10.206:26656",
+          "memo": "0d46d1e6b1103d33765e209a7da0943156291fcb@172.18.10.206:26656",
           "source": "0",
           "data": null
         }
@@ -422,11 +422,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1zwx2slptug57vfauf2tynrtv42kwm2kutegmvu",
-                  "validator_address": "bva1zwx2slptug57vfauf2tynrtv42kwm2ku9sq0jf",
+                  "delegator_address": "tbnb1hexqyu3m8uuudqdnnpnsnlwe6xg0n3078lx68l",
+                  "validator_address": "bva1hexqyu3m8uuudqdnnpnsnlwe6xg0n307fkwwe2",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "rkTArCxbbI3Ct2Atyi9bCjX7lwskajtIKqwp89koCEs="
+                    "value": "j0p0oHNRiV3fNzBXuY+ubfryzSHzegY+GWAQeP5HDVM="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -441,14 +441,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AytC2ymEDQNbh3rEFa1mErrMFk8QfUjEnhEqCiQmLBkx"
+                "value": "Aygd4/N9zvf/rKnWCMCqbt0O2pad5ZXyiPeBZgbhE7GV"
               },
-              "signature": "bi+61KTmH85IDyxoJpJuPWKKNKvzV9sSeoReXAQX6aMMKzLjFK1hWRKUxt3PWUFoVtFcFP+4yhXowKZ70NufUw==",
+              "signature": "d7g5NIda45dOpTT+k/rVOqXrxilPI1t6E0qT9YbTzVBKNSOb2uAWy2hlMt32bNIFW5W5/d7czFWnmqEaY/BQmg==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "96a8f4369b93b46439a0dbaebe31c04adc94835d@172.18.10.207:26656",
+          "memo": "64b29930674c02dd4a45968759173a3c546fb57c@172.18.10.207:26656",
           "source": "0",
           "data": null
         }
@@ -472,11 +472,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1xq3ygpjgexls5cst9tgrhwuv6ujuvswstvmwd9",
-                  "validator_address": "bva1xq3ygpjgexls5cst9tgrhwuv6ujuvsws99n6ns",
+                  "delegator_address": "tbnb135mqtf9gef879nmjlpwz6u2fzqcw4qlzrqwgvw",
+                  "validator_address": "bva135mqtf9gef879nmjlpwz6u2fzqcw4qlzdfxujm",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "DUOALcdsVukSkKjkh+/bjO2BE3WW5QrpMrX6khL7Ee4="
+                    "value": "SbKI5Ou7OigcLVRvwwJT1brwiZO25dKV+3h6WzFKKY4="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -491,14 +491,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AjoqaRWNWgHEV0rx4gQq1YILYJW6LWjAOwW55Aap3efv"
+                "value": "A0130hq3qdHzfPUkU/ZQ4s2jynvhy7uOrtWnCpCmjasJ"
               },
-              "signature": "25V59zdMuGPlyEmw2tKFCdgu8lH4KLz+s5pDBebmpOh8k5fV39Fhie+JRqR9WVilqvXYJ36tSrAxNzUIdo2pzA==",
+              "signature": "NYgG1u8fayGSTStgwfioxDemDS+8H16DC7+s/DRD1rBannYUs8cUAn2Lfrqg0leRhhNrWGPgD4qQv9IU2Smh/w==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "c5cbcb5f92f55b418c033621bd2fd2468110c381@172.18.10.208:26656",
+          "memo": "7d290fae6845d53f7ffbb2aabc528b29650bee6c@172.18.10.208:26656",
           "source": "0",
           "data": null
         }
@@ -522,11 +522,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1nl3xmwwd23sgj98ygcw2l7zhgyd9q9ykcqslae",
-                  "validator_address": "bva1nl3xmwwd23sgj98ygcw2l7zhgyd9q9ykkfctrv",
+                  "delegator_address": "tbnb1q82g2h9q0kfe7sysnj5w7nlak92csfjztymp39",
+                  "validator_address": "bva1q82g2h9q0kfe7sysnj5w7nlak92csfjz9dn40s",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "KCXMqZJ2nfI7mTateHDoij0z0vjNO0KfzGjgTSdxir0="
+                    "value": "4Xy+nCDNz9+HazsSl40yZKAH/KqnHEzbcB2evAMj9E8="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -541,14 +541,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AsmOqBKC0XNqEOvGYbzvEUDD4sH8FlK5Zz1SPY9+cYE7"
+                "value": "AlG4f0se3Ok1EbsvzMtDIQsSGBslR+eqy9uSBIgXQToP"
               },
-              "signature": "0S6HQ2MdAgbUFG0f5xTOo07sHfZ2kj2h852DWyr4pMZ0Z/g9JO+byWtHXc0MzD8AS1y0Ltt6PoLdYT2/4Spftg==",
+              "signature": "pMLebkHE2hnuHv+AjIdMdnm6G5kzheCFs+V1+NZV12p+yfK3T7UPy/2mDFVkmIUfwWaBtDHD//+G8eyvZDD5Ew==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "e02e675cebbf73dde0703213d902b0f1c2fda088@172.18.10.209:26656",
+          "memo": "7cf465f3c351f9f0873be9a7396a5438208b9546@172.18.10.209:26656",
           "source": "0",
           "data": null
         }
@@ -572,11 +572,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb13k50n9c4jx6c795snr4gl4n0aeuwy3fjlazksq",
-                  "validator_address": "bva13k50n9c4jx6c795snr4gl4n0aeuwy3fj352zw4",
+                  "delegator_address": "tbnb183nch8pn3f698vurrqypq3s254slcane2t66aj",
+                  "validator_address": "bva183nch8pn3f698vurrqypq3s254slcaneyzjwr8",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "6U/cE0aLByRfxoya5KtQYTH/pXHAG9jKXmsi7SD5J/0="
+                    "value": "vQPen4qynigACU4VP6xvaWz6USU2ycL4BNyywsTkrtY="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -591,14 +591,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "A4aZLcQkHGHk+RUrYIvP8BvF1LKcv0OiUSEGpdgCbthV"
+                "value": "A6+/HDC0uLx/9Z5N+Gc+qWOIUaRpKsZYoDlRb41EUryy"
               },
-              "signature": "v10eI9CcziyP78DDp1P8fnX8/R2pTlwaPJulwvs6wd04RA7sHTBt7aJiPJCrQ+NQbJ/PQ0D9g44NnyxIdyyfgA==",
+              "signature": "BRG3lQeEWiamvVHnf30YeFqsK+TIt0qfYhLhSZnyYwh4b3AwsHQcTzFfr/wezfDa7C/OnxinngXXCAy5zLAhPg==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "21c8fe593773fc3182e0596e13160da97896afa5@172.18.10.210:26656",
+          "memo": "32769f58a63d25e4a0b9d793ce80626506213727@172.18.10.210:26656",
           "source": "0",
           "data": null
         }
@@ -622,11 +622,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1nj52tv3yz0j0cjs0x0wjh73kymx3u0qkhg48pt",
-                  "validator_address": "bva1nj52tv3yz0j0cjs0x0wjh73kymx3u0qkepanl7",
+                  "delegator_address": "tbnb1r6l0c0fxu458hlq6m7amkcltj8nufyl9mr2wm5",
+                  "validator_address": "bva1r6l0c0fxu458hlq6m7amkcltj8nufyl942z69p",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "EJ5gyZvK8vPsVrkTepUTIm5EPGNBZ7gAkjk6fpCevis="
+                    "value": "GE57ED00xBAD+bhk1fjBrdqb0ENrJTuzyES8c5wed8k="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -641,14 +641,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AiD0pLfNQu9mU4rx9a0i5Vz0CsktKq0fwn7FeoJsTzdM"
+                "value": "ArnjgWSGbDDJmYuIYbE97ZShYNCf0AlVjeNINmmDyYa0"
               },
-              "signature": "2UL04DaVBV/0F+dTiyPO6IvKE+5H+17x0ijfkwbpbrBPo360IhmHjtkMZH7FJGeUecJeESqnn7IgjNxH1/O7JA==",
+              "signature": "un+GYFlzBtV9lDapslHxwHbsVi0Ng8YzAv8UK4OgSNcRU4FUX69r2ujkx6Zx8EIsgPlxCja9xgGuK9qYJwPZKw==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "4cedc368e00e6e4e95b39c45526502357e6cfb62@172.18.10.211:26656",
+          "memo": "c1bcf51e6022010ebb93288bd5d932a3894c999e@172.18.10.211:26656",
           "source": "0",
           "data": null
         }
@@ -672,11 +672,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb10y7kfq2lmvzkv7xn7rj8c9tzfyght75f8ulp9m",
-                  "validator_address": "bva10y7kfq2lmvzkv7xn7rj8c9tzfyght75ff4h4mw",
+                  "delegator_address": "tbnb193t8pkhm2sxw5uy5ypesygda8rzsk25ge3e9y7",
+                  "validator_address": "bva193t8pkhm2sxw5uy5ypesygda8rzsk25ghc336t",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "Eit/wjsX/SPK8/i3brQwHJ66++KC8xyKEq6lf5ayNyY="
+                    "value": "TUIK6oQ+kqDP5p2JaW3/aCd2n5y1KiSa9TfOib8qS3Q="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -691,14 +691,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AgGFclZ8JETie5MNt6/O74tr0ZcO2+PazyxGVJEQx9wa"
+                "value": "Az0wT4xmeI7a7sEIFKcGLkiICkFBS1Fl4/hFMGV1QjL6"
               },
-              "signature": "PdntTAQRGzGKkumdAqr/u9/LjP7zuYi2Wx40ypZx0/Yencp0daT+XKWGB46MBQJB7qMFoYSMaTzIZCfDfHVV6w==",
+              "signature": "T+Jg3b6p0IOd/J0tChygDOnQjKJXl2m6K1zyyLMM2E82woc9eL7nR6j7jr00SuU5dJ/Z+UuYfeinv4R0pbGpmA==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "02def09b562f8ddd151818cdd949c37ddcbf5e60@172.18.10.212:26656",
+          "memo": "dd2adba52ad9c830fe16a53fe81dac6880a91218@172.18.10.212:26656",
           "source": "0",
           "data": null
         }
@@ -722,11 +722,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1agny0vzplzg6ah0nt6vqajx35dtjlmf4p0lyrd",
-                  "validator_address": "bva1agny0vzplzg6ah0nt6vqajx35dtjlmf40xhsac",
+                  "delegator_address": "tbnb108drn8exhv72tp40e6lq9z949nnjj54yzqrr2f",
+                  "validator_address": "bva108drn8exhv72tp40e6lq9z949nnjj54yvfth5u",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "Vtk6xBfSukNnx/o06qnZH6YBnL3R2Z/a0Jv7v+HSEoE="
+                    "value": "yA6avvf/Q5wQxo/o8TA97d/FJ3GMOzfYumgHRG48gno="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -741,14 +741,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "Ah/6w93pqC7m/ylE4PYnGPxKVcbonm7EZur1mtmiZRFL"
+                "value": "A28N2eZXepmh+2enXvdAPqbbPf9yFCqYZleFjUMRJe0g"
               },
-              "signature": "4uT1TqhUG4OaLFxIAPKju7zIRLpjMFnbzfhXrjXvtb8CR2O2BlwRVkqfmFaDezMoHr3YQMevoqUAjYeIEYYkhw==",
+              "signature": "egp4GjM/8PEVeFJiopen35eZzy/5NKjGKmK3MGpfmAFGQvjN6G4HyGX+6eigOuw40qpMdT9HYmvzSoa+jgXURQ==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "99b4be32daa213f938c6fdb5872793ca2b85841d@172.18.10.213:26656",
+          "memo": "c4d94f29e765ecfe81c940e11c2e997321aa8e0f@172.18.10.213:26656",
           "source": "0",
           "data": null
         }
@@ -772,11 +772,11 @@
                     "max_rate": "0",
                     "max_change_rate": "0"
                   },
-                  "delegator_address": "tbnb1ets07q7vfh03cx2m8l88rhu92h7rx6sjryzq27",
-                  "validator_address": "bva1ets07q7vfh03cx2m8l88rhu92h7rx6sjdd255t",
+                  "delegator_address": "tbnb1vehecekrsks5sshcwvxyeyrd469j9wvcqm37yu",
+                  "validator_address": "bva1vehecekrsks5sshcwvxyeyrd469j9wvcwje26f",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
-                    "value": "4Aw4TQ9jfI8b/r7VxLgav1oMUZe4MqZJ1nZRk6DKDM0="
+                    "value": "kUKvzGkbfMBdJsewvgyLRkGClBcXMOB584T94vpQuvw="
                   },
                   "delegation": {
                     "denom": "BNB",
@@ -791,14 +791,14 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "Az1cIgcyG577d0eGSwMy3JR7SXUOZT7xB8iQdfESM6s5"
+                "value": "AsS8HffgT0IIai/sesaWtW5wurpu7eBDkhu0esmwjsnc"
               },
-              "signature": "1MOd1uFCqF8GOnZEMQWaF6bTF/2518DX0f4EOC/3vAgk/vp/DwR8GjgXByzdWnwwVEmx1gUj6Q1HtwhC23dxXw==",
+              "signature": "k6LegehVpGnjQ4ePBwJajrbKlPg5tXQMkBtIZ+nbMNAHp4Z2IihYrUGMAoKu0B0LJbbNH/7Gq7b0AK5HfYEByg==",
               "account_number": "0",
               "sequence": "0"
             }
           ],
-          "memo": "52f8acca0142b4bdfa11de0e3384ddea2015d88e@172.18.10.214:26656",
+          "memo": "4119f9f689f62734bcf3757f916639bc480bb8ce@172.18.10.214:26656",
           "source": "0",
           "data": null
         }
