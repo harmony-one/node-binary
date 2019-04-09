@@ -121,13 +121,13 @@ laddr = "tcp://0.0.0.0:26656"
 # If empty, will use the same port as the laddr,
 # and will introspect on the listener or use UPnP
 # to figure out the address.
-external_address = ""
+external_address = "52.199.142.20:27146"
 
 # Comma separated list of seed nodes to connect to
-seeds = "381934b9b3f862d1e81e699d8e1d38929f330cef@aa13359cd244f11e988520ad55ba7f5a-c3963b80c9b991b7.elb.us-east-1.amazonaws.com:27146,fe5eb5a945598476abe4826a8d31b9f8da7b1a54@aa35ed7c1244f11e988520ad55ba7f5a-bbfb4fe79dee5d7e.elb.us-east-1.amazonaws.com:27146,8825b32e3abec71d772abf009ba1956d452be1fa@aa58a7e44244f11e988520ad55ba7f5a-45d504e63bacb8dd.elb.us-east-1.amazonaws.com:27146"
+seeds = "55a909c99cca984ab45ea8002cf06b77be7ff03b@13.114.123.164:27146"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "381934b9b3f862d1e81e699d8e1d38929f330cef@aa13359cd244f11e988520ad55ba7f5a-c3963b80c9b991b7.elb.us-east-1.amazonaws.com:27146,fe5eb5a945598476abe4826a8d31b9f8da7b1a54@aa35ed7c1244f11e988520ad55ba7f5a-bbfb4fe79dee5d7e.elb.us-east-1.amazonaws.com:27146,8825b32e3abec71d772abf009ba1956d452be1fa@aa58a7e44244f11e988520ad55ba7f5a-45d504e63bacb8dd.elb.us-east-1.amazonaws.com:27146"
+persistent_peers = "55a909c99cca984ab45ea8002cf06b77be7ff03b@13.114.123.164:27146"
 
 # UPNP port forwarding
 upnp = false
@@ -164,7 +164,7 @@ pex = true
 # peers. If another node asks it for addresses, it responds and disconnects.
 #
 # Does not work if the peer-exchange reactor is disabled.
-seed_mode = false
+seed_mode = true
 
 # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
 private_peer_ids = ""
@@ -184,7 +184,7 @@ broadcast = true
 wal_dir = ""
 
 # size of the mempool
-size = 2000
+size = 1000
 
 # size of the cache (used to filter transactions we saw earlier)
 cache_size = 10000
@@ -233,7 +233,7 @@ indexer = "kv"
 # It's recommended to index only a subset of tags due to possible memory
 # bloat. This is, of course, depends on the indexer's DB and the volume of
 # transactions.
-index_tags = "tx.height"
+index_tags = ""
 
 # When set to true, tells indexer to index all tags (predefined tags:
 # "tx.hash", "tx.height" and all tags from DeliverTx responses).
