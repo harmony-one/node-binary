@@ -16,10 +16,6 @@ orderKeeperConcurrency = 2
 breatheBlockDaysCountBack = 7
 
 [upgrade]
-# fixOrderSeqInPriceLevel height
-fixOrderSeqInPriceLevelHeight = -1
-# fixDropFilledOrderSeq height
-fixDropFilledOrderSeqHeight = -1
 
 [addr]
 # Bech32PrefixAccAddr defines the Bech32 prefix of an account's address

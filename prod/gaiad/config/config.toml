@@ -124,7 +124,7 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = "3.82.70.135:27146"
 
 # Comma separated list of seed nodes to connect to
-seeds = "ff1931fa0d5ddd9647a93fac79bbd247e8c98376@52.54.234.10:27146,100b94092cdbf0dbab4eb39559bf26cc03b87168@52.73.6.125:27146,a7a8bec3c4d4de39c5a7c009bf96fcdd6d2cab0b@34.202.198.134:27146"
+seeds = "7d2a3c3727f46a6d04321656ecdf2f75d1d9c0dc@52.54.234.10:27146,5c96d4f0174dda7757bcda11a57ecc91851a90f0@52.73.6.125:27146,ca1245471ff1f2224e1076dfd94d7d2d66077cf5@34.202.198.134:27146,c318936fc3005a07c332c282cd7c3f24fba0fb74@18.208.56.183:27146,229ec3d0e55be99dee2194142d0ffc33e923a30d@3.209.208.253:27146"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
@@ -151,11 +151,20 @@ flush_throttle_timeout = "10ms"
 # Maximum size of a message packet payload, in bytes
 max_packet_msg_payload_size = 1048576
 
+# Maximum num of keys a state sync request ask for
+keys_per_request = 2500
+
 # Rate at which packets can be sent, in bytes/second
 send_rate = 52428800
 
 # Rate at which packets can be received, in bytes/second
 recv_rate = 52428800
+
+# Interval to send pings
+ping_interval = "1m0s"
+
+# Maximum wait time for pongs
+pong_timeout = "45s"
 
 # Set true to enable the peer-exchange reactor
 pex = true
@@ -175,6 +184,22 @@ allow_duplicate_ip = false
 # Peer connection configuration.
 handshake_timeout = "20s"
 dial_timeout = "3s"
+
+##### dbcache configuration options #####
+[dbcache]
+# OpenFilesCacheCapacity defines the capacity of the open files caching.
+open_files_cache_capacity = 1024
+
+# BlockCacheCapacity defines the capacity of the 'sorted table' block caching.
+block_cache_capacity = 8388608
+
+# WriteBuffer defines maximum size of a 'memdb' before flushed to 'sorted table'.
+write_buffer = 4194304
+
+# Filter defines an 'effective filter' to use. An 'effective filter'
+# if defined will be used to generate per-table filter block.
+# Greater than 0 would creates a new initialized bloom filter for given bitsPerKey.
+bits_per_key = 10
 
 ##### mempool configuration options #####
 [mempool]
@@ -242,6 +267,16 @@ index_tags = "tx.height"
 # precedence over IndexAllTags (i.e. when given both, IndexTags will be
 # indexed).
 index_all_tags = false
+
+##### block indexer configuration options #####
+[block_index]
+
+# What indexer to use for blocks
+#
+# Options:
+#   1) "null"
+#   2) "kv" (default) - the simplest possible indexer, backed by key-value storage (defaults to levelDB; see DBBackend).
+indexer = "kv"
 
 ##### instrumentation configuration options #####
 [instrumentation]
