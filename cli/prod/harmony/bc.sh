@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ -z $BNBCLI ]; then
-   BNBCLI=bnbcli
+   BNBCLI=../0.6.1/linux/bnbcli
 fi
 
 # key and symbol configuraion
-KEY=ledgerkey
+KEY=[Enter key name here]
 
 # symbol of Harmony $ONE
 SYMBOL=ONE-5F9
@@ -19,7 +19,7 @@ PRICE=
 # binance chain configuration and harmony account in binance chain
 CHAIN=Binance-Chain-Tigris
 NODE=https://dataseed5.defibit.io:443
-ACCOUNT=bnb1a03uvqmnqzl85csnxnsx2xy28m76gkkht46f2l
+ACCOUNT=[Enter bnb address here]
 
 # list deposit
 DEPOSIT_BNB=1000
@@ -45,6 +45,8 @@ ACTION:
    proposal             list proposal
    list                 do real list
    balance              check Harmony balance on Binance Chain (default action)
+   send                 send individual transactions
+   multi-send           send multiple transactions using supported json format
 
 EOT
    exit
@@ -101,10 +103,67 @@ LIST DEPOSIT: $DEPOSIT_BNB BNB
 
 EOT
 
-   read -p "DO IT (y/n)?" yn
+   read -p "DO IT (y/n)? " yn
 
    if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
       $BNBCLI gov submit-list-proposal --from $KEY --deposit $DEPOSIT_BNB_UNIT:BNB --base-asset-symbol $SYMBOL --quote-asset-symbol $QUOTE --init-price $PRICE --title "list proposal $SYMBOL/$QUOTE" --description "list proposal $SYMBOL/$QUOTE" --expire-time $EXPIRE --voting-period $VOTE --chain-id=$CHAIN --trust-node --node $NODE --json
+   fi
+}
+
+function make_transaction
+{
+   DRY_RUN=--dry-run
+   read -p "Is this a dryrun (y/n)? " yn
+   if [[ "$yn" != "y" && "$yn" != "Y" ]]; then
+      DRY_RUN=
+   fi
+
+   loop=true
+   while [ "$loop" = "true" ]; do
+      read -p "Enter receiver: " receiver
+      read -p "Enter amount: " amount
+      scaled_amt=$(echo "scale=8; $amount / 100000000" | bc)
+      echo "Sending $scaled_amt $SYMBOL"s" to $receiver."
+      read -p "Confirm (y/n)? " yn
+      
+      if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
+         read -p "Enter memo: " memo
+         $BNBCLI send --from $KEY --to $receiver --amount $amount:$SYMBOL --memo="$memo" --chain-id $CHAIN --trust-node --node $NODE --json $DRY_RUN
+      else
+         echo "Canceling."
+         exit
+      fi
+
+      read -p "Send another transaction (y/n)? " yn
+      if [[ "$yn" != "y" && "$yn" != "Y" ]]; then
+         loop=false
+      fi
+   done
+}
+
+function make_transactions
+{
+   read -p "What file would you like to use? " file
+   if [[ ! -f $file ]]; then
+      echo "File \"$file\" not found."
+      exit
+   fi
+
+   DRY_RUN=--dry-run
+   read -p "Is this a dryrun (y/n)? " yn
+   if [[ "$yn" != "y" && "$yn" != "Y" ]]; then
+      DRY_RUN=
+   fi
+
+   echo -e "Printing transaction file \"$file\" contents:\n$(cat $file)"
+   read -p "Use file (y/n)? " yn
+
+   if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
+      read -p "Enter memo: " memo
+      $BNBCLI token multi-send --from $KEY --transfers-file $file --memo="$memo" --chain-id $CHAIN --trust-node --node $NODE --json $DRY_RUN
+   else
+      echo "Canceling."
+      exit
    fi
 }
 
@@ -127,5 +186,7 @@ case $ACTION in
    list) do_list ;;
    proposal) do_proposal ;;
    balance) check_balance ;;
+   send) make_transaction ;;
+   multi-send) make_transactions;;
    *) usage ;;
 esac
