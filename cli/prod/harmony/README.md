@@ -5,17 +5,31 @@ Additionally, script by default uses the linux distribution, so if using Mac, th
 Included is also a script that takes a basic textfile as it's first parameter and outputs a file called "rewards.json" in the correct format for the bnbcli to take. The textfile needs to just have two columns, the address and the amount sent. Note that you can only send one sole memo to multiple addresses, so if you need to have multiple memos, you need to use the single send command. This also has the ability to do a repeat, so you could create a textfile to pass in the inputs. The following is an example of this. Parentheses for explanation of each line.
 
 ./bc.sh send < rewards.txt
+
 rewards.txt contents:
+
 n (Answer to is this a dry run?)
+
 bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23 (What address?)
+
 568181818100 (Amount?)
+
 y (Confirmation?)
+
 105369067 (Memo?)
+
 Password12 (Password to key?)
+
 y (Another transaction?)
+
 bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23 (What address?)
+
 568181818100 (Amount?)
+
 y (Confirmation?)
+
 105369067 (Memo?)
+
 Password12 (Password to key?)
+
 n (Another transaction?)
