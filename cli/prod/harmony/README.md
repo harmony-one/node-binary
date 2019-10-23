@@ -6,30 +6,17 @@ Included is also a script that takes a basic textfile as it's first parameter an
 
 ./bc.sh send < rewards.txt
 
-rewards.txt contents:
-
-n (Answer to is this a dry run?)
-
-bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23 (What address?)
-
-568181818100 (Amount?)
-
-y (Confirmation?)
-
-105369067 (Memo?)
-
-Password12 (Password to key?)
-
-y (Another transaction?)
-
-bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23 (What address?)
-
-568181818100 (Amount?)
-
-y (Confirmation?)
-
-105369067 (Memo?)
-
-Password12 (Password to key?)
-
+rewards.txt contents:  
+n (Answer to is this a dry run?)  
+bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23 (What address?)  
+568181818100 (Amount?)  
+y (Confirmation?)  
+105369067 (Memo?)  
+Password12 (Password to key?)  
+y (Another transaction?)  
+bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23 (What address?)  
+568181818100 (Amount?)  
+y (Confirmation?)  
+105369067 (Memo?)  
+Password12 (Password to key?)  
 n (Another transaction?)
